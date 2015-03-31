@@ -1,0 +1,193 @@
+@prefix status: <http://metadataregistry.org/uri/RegStatus/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix schema: <http://schema.org/> .
+@prefix aac-ont: <http://www.americanartcollaborative.org/ontology/> .
+@prefix reg: <http://metadataregistry.org/uri/profile/RegAp/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix msg0: <http://web.resource.org/cc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix FRBRentitiesRDA: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/> .
+@prefix saam-ont: <http://americanart.si.edu/ontology/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ElementsGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc-crm#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node18ubbne3cx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "s18-s-indianapolis-artists.xml" ;
+	km-dev:modelPublicationTime "1406983190636"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDeath\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"name\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDate\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"name\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"deathDate\"}],[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]]" ;
+	km-dev:hasModelLabel "s18-s-indianapolis-artists.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"newColumnName\",\"value\":\"deathDate\",\"type\":\"other\"},{\"name\":\"transformationCode\",\"value\":\"value = getValue(\\\"birthDeath\\\")\\nvalueArr = value.split(\\\"-\\\")\\ndeath = \\\"\\\"\\nif(len(valueArr) > 1) : death = valueArr[1].strip()\\nreturn death\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDeath\"}],\"type\":\"hNodeId\"},{\"name\":\"errorDefaultValue\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"birthDeath\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"deathDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDeath\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SubmitPythonTransformationCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"newColumnName\",\"value\":\"birthDate\",\"type\":\"other\"},{\"name\":\"transformationCode\",\"value\":\"value = getValue(\\\"birthDeath\\\")\\nvalueArr = value.split(\\\"-\\\")\\nbirth = \\\"\\\"\\nif(len(valueArr) > 0) : birth = valueArr[0].strip()\\nreturn birth\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDeath\"}],\"type\":\"hNodeId\"},{\"name\":\"errorDefaultValue\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"birthDeath\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"birthDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDeath\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SubmitPythonTransformationCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDate\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfBirth\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"birthDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"birthDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDate\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"birthDate\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"deathDate\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfDeath\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"deathDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"deathDate\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"deathDate\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"deathDate\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"name\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/nameOfThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"name\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"name\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"nationality\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/countryAssociatedWithThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/title\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"artists\"},{\"columnName\":\"artist\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP12:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Person\",\"edgeId\":\"http://purl.org/dc/terms/creator\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"artists\"}],\"visible\":true,\"hideable\":false,\"name\":\"artists\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"artist\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"artist\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthDeath\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"birthDeath\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthDate\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthDate\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathDate\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathDate\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"name\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"name\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"nationality\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"nationality\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"artists\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artist\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"title\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"title\\\\\\\"}]\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"artists\\\"},{\\\"columnName\\\":\\\"department\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"department\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"}]" .
+
+km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 a rr:TriplesMap .
+
+_:node18ubbne3cx1 km-dev:hasTriplesMap km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 .
+
+km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx2 rr:tableName "s18-s-indianapolis-artists.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasLogicalTable _:node18ubbne3cx2 .
+
+km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 rr:logicalTable _:node18ubbne3cx2 ;
+	rr:subjectMap _:node18ubbne3cx3 .
+
+_:node18ubbne3cx1 km-dev:hasSubjectMap _:node18ubbne3cx3 .
+
+_:node18ubbne3cx3 km-dev:isPartOfMapping _:node18ubbne3cx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1" ;
+	rr:class aac-ont:CulturalHeritageObject ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:CulturalHeritageObject1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_9a155b26-0569-46af-82e8-a78ec9247c4c rr:predicate dcterms:creator .
+
+km-dev:RefObjectMap_2d1d64f3-f0ed-4e8d-b2c6-56e6d7937fce a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap km-dev:RefObjectMap_2d1d64f3-f0ed-4e8d-b2c6-56e6d7937fce .
+
+km-dev:PredicateObjectMap_9a155b26-0569-46af-82e8-a78ec9247c4c rr:objectMap km-dev:RefObjectMap_2d1d64f3-f0ed-4e8d-b2c6-56e6d7937fce .
+
+km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 rr:predicateObjectMap km-dev:PredicateObjectMap_9a155b26-0569-46af-82e8-a78ec9247c4c .
+
+km-dev:PredicateObjectMap_9a155b26-0569-46af-82e8-a78ec9247c4c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9a155b26-0569-46af-82e8-a78ec9247c4c .
+
+km-dev:PredicateObjectMap_497faf49-7c6e-429b-87cb-78c247b6ea7d rr:predicate dcterms:title .
+
+_:node18ubbne3cx4 rr:column "[\"artists\",\"artist\",\"title\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap _:node18ubbne3cx4 .
+
+km-dev:PredicateObjectMap_497faf49-7c6e-429b-87cb-78c247b6ea7d rr:objectMap _:node18ubbne3cx4 .
+
+km-dev:TriplesMap_a1657188-7efb-4986-921f-24c63116bb81 rr:predicateObjectMap km-dev:PredicateObjectMap_497faf49-7c6e-429b-87cb-78c247b6ea7d .
+
+km-dev:PredicateObjectMap_497faf49-7c6e-429b-87cb-78c247b6ea7d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_497faf49-7c6e-429b-87cb-78c247b6ea7d .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 a rr:TriplesMap .
+
+_:node18ubbne3cx1 km-dev:hasTriplesMap km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx5 rr:tableName "s18-s-indianapolis-artists.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasLogicalTable _:node18ubbne3cx5 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 rr:logicalTable _:node18ubbne3cx5 ;
+	rr:subjectMap _:node18ubbne3cx6 .
+
+_:node18ubbne3cx1 km-dev:hasSubjectMap _:node18ubbne3cx6 .
+
+_:node18ubbne3cx6 km-dev:isPartOfMapping _:node18ubbne3cx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/Person1" ;
+	rr:class aac-ont:Person ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:Person1" .
+
+km-dev:PredicateObjectMap_b19e7869-6701-4f46-abb6-70a5684a944d rr:predicate ElementsGr2:countryAssociatedWithThePerson .
+
+_:node18ubbne3cx7 rr:column "[\"artists\",\"artist\",\"nationality\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap _:node18ubbne3cx7 .
+
+km-dev:PredicateObjectMap_b19e7869-6701-4f46-abb6-70a5684a944d rr:objectMap _:node18ubbne3cx7 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 rr:predicateObjectMap km-dev:PredicateObjectMap_b19e7869-6701-4f46-abb6-70a5684a944d .
+
+km-dev:PredicateObjectMap_b19e7869-6701-4f46-abb6-70a5684a944d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b19e7869-6701-4f46-abb6-70a5684a944d .
+
+km-dev:PredicateObjectMap_115bfae3-855e-47c4-84bc-f98c2c3ee718 rr:predicate ElementsGr2:dateOfBirth .
+
+_:node18ubbne3cx8 rr:column "[\"artists\",\"artist\",\"birthDate\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap _:node18ubbne3cx8 .
+
+km-dev:PredicateObjectMap_115bfae3-855e-47c4-84bc-f98c2c3ee718 rr:objectMap _:node18ubbne3cx8 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 rr:predicateObjectMap km-dev:PredicateObjectMap_115bfae3-855e-47c4-84bc-f98c2c3ee718 .
+
+km-dev:PredicateObjectMap_115bfae3-855e-47c4-84bc-f98c2c3ee718 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_115bfae3-855e-47c4-84bc-f98c2c3ee718 .
+
+km-dev:PredicateObjectMap_dcd4cada-0679-4d5e-ab86-35858c25566c rr:predicate ElementsGr2:dateOfDeath .
+
+_:node18ubbne3cx9 rr:column "[\"artists\",\"artist\",\"deathDate\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap _:node18ubbne3cx9 .
+
+km-dev:PredicateObjectMap_dcd4cada-0679-4d5e-ab86-35858c25566c rr:objectMap _:node18ubbne3cx9 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 rr:predicateObjectMap km-dev:PredicateObjectMap_dcd4cada-0679-4d5e-ab86-35858c25566c .
+
+km-dev:PredicateObjectMap_dcd4cada-0679-4d5e-ab86-35858c25566c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dcd4cada-0679-4d5e-ab86-35858c25566c .
+
+km-dev:PredicateObjectMap_5e8ed56f-adc2-4b13-8034-c57f520a7027 rr:predicate ElementsGr2:nameOfThePerson .
+
+_:node18ubbne3cx10 rr:column "[\"artists\",\"artist\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasObjectMap _:node18ubbne3cx10 .
+
+km-dev:PredicateObjectMap_5e8ed56f-adc2-4b13-8034-c57f520a7027 rr:objectMap _:node18ubbne3cx10 .
+
+km-dev:TriplesMap_18e7892b-a5e9-4590-9374-5c025d752cb4 rr:predicateObjectMap km-dev:PredicateObjectMap_5e8ed56f-adc2-4b13-8034-c57f520a7027 .
+
+km-dev:PredicateObjectMap_5e8ed56f-adc2-4b13-8034-c57f520a7027 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubbne3cx1 .
+
+_:node18ubbne3cx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e8ed56f-adc2-4b13-8034-c57f520a7027 .

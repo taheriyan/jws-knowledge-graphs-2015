@@ -1,0 +1,434 @@
+@prefix status: <http://metadataregistry.org/uri/RegStatus/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix schema: <http://schema.org/> .
+@prefix aac-ont: <http://www.americanartcollaborative.org/ontology/> .
+@prefix reg: <http://metadataregistry.org/uri/profile/RegAp/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix msg0: <http://web.resource.org/cc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix FRBRentitiesRDA: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/> .
+@prefix saam-ont: <http://americanart.si.edu/ontology/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ElementsGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc-crm#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node18u1ra1vnx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "s15-s-detroit-institute-of-art.json" ;
+	km-dev:modelPublicationTime "1406663985143"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"paintings\"},{\"columnName\":\"medium\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"classification\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"provenance\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"credit\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"imageURL\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"date\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"dimensions\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"name\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"death\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"title\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"accession\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"birth\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"paintings\"},{\"columnName\":\"medium\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"classification\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"provenance\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"credit\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"imageURL\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"date\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"dimensions\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"name\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"death\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"title\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"accession\"}],[{\"columnName\":\"paintings\"},{\"columnName\":\"birth\"}]]" ;
+	km-dev:hasModelLabel "s15-s-detroit-institute-of-art.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"paintings\"}],\"visible\":true,\"hideable\":false,\"name\":\"paintings\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"accession\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"accession\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"birth\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"birth\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"classification\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"classification\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"credit\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"credit\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"date\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"date\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"death\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"death\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"department\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"department\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"dimensions\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"imageURL\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"imageURL\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"keywords\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"keywords\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"paintings\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"keywords\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"values\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"values\\\\\\\"}]\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"medium\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"medium\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"name\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"name\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"nationality\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"nationality\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"provenance\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"provenance\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"title\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"title\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"accession\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.americanartcollaborative.org/ontology/accessionNumber\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"accession\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"accession\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"accession\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"accession\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.w3.org/2008/05/skos#Concept\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasType\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"classification\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2008/05/skos#prefLabel\",\"isPrimary\":true,\"DomainLabel\":\"skos:Concept1\",\"DomainId\":\"http://www.w3.org/2008/05/skos#Concept1\",\"DomainUri\":\"http://www.w3.org/2008/05/skos#Concept\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"classification\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"classification\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"classification\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"classification\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"name\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/nameOfThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"name\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"name\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"birth\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfBirth\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"birth\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"birth\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"birth\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"birth\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"death\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfDeath\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"death\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"death\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"death\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"death\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.w3.org/2008/05/skos#Concept\",\"edgeId\":\"http://purl.org/dc/terms/creator\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"nationality\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/countryAssociatedWithThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"date\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/created\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"date\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"date\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"date\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"date\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"dimensions\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/extent\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"dimensions\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"dimensions\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"medium\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/medium\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"medium\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"medium\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"medium\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"medium\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"credit\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/provenance\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"credit\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"credit\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"credit\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"credit\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"title\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/title\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"provenance\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/provenance\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"provenance\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"provenance\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"provenance\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"provenance\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\"},{\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasType\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1\"},{\"edgeId\":\"http://purl.org/dc/terms/creator\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Person\",\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"},{\"edgeTargetUri\":\"http://www.w3.org/2008/05/skos#Concept\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasType\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Person\",\"edgeId\":\"http://purl.org/dc/terms/creator\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/aggregatedCHO\",\"edgeSourceId\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1 (add)\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeSourceUri\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP7:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.europeana.eu/schemas/edm/WebResource\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasView\",\"edgeSourceId\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1\",\"edgeTargetId\":\"http://www.europeana.eu/schemas/edm/WebResource1 (add)\",\"edgeSourceUri\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.europeana.eu/schemas/edm/WebResource1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"imageURL\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"edm:WebResource1\",\"DomainId\":\"http://www.europeana.eu/schemas/edm/WebResource1\",\"DomainUri\":\"http://www.europeana.eu/schemas/edm/WebResource\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"imageURL\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"paintings\"},{\"columnName\":\"imageURL\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"imageURL\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"imageURL\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"paintings\"}],\"visible\":true,\"hideable\":false,\"name\":\"paintings\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"accession\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"accession\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"birth\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"birth\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"classification\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"classification\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"credit\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"credit\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"date\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"date\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"death\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"death\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"department\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"department\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"dimensions\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"imageURL\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"imageURL\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"keywords\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"keywords\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"paintings\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"keywords\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"values\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"values\\\\\\\"}]\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"medium\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"medium\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"name\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"name\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"nationality\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"nationality\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"provenance\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"provenance\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"paintings\\\"},{\\\"columnName\\\":\\\"title\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"title\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"}]" .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 a rr:TriplesMap .
+
+_:node18u1ra1vnx1 km-dev:hasTriplesMap km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx2 rr:tableName "s15-s-detroit-institute-of-art.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasLogicalTable _:node18u1ra1vnx2 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:logicalTable _:node18u1ra1vnx2 ;
+	rr:subjectMap _:node18u1ra1vnx3 .
+
+_:node18u1ra1vnx1 km-dev:hasSubjectMap _:node18u1ra1vnx3 .
+
+_:node18u1ra1vnx3 km-dev:isPartOfMapping _:node18u1ra1vnx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1" ;
+	rr:class aac-ont:CulturalHeritageObject ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:CulturalHeritageObject1" .
+
+km-dev:PredicateObjectMap_4dd5c8ee-d60e-437d-9779-2b45de88f238 rr:predicate dcterms:created .
+
+_:node18u1ra1vnx4 rr:column "[\"paintings\",\"date\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx4 .
+
+km-dev:PredicateObjectMap_4dd5c8ee-d60e-437d-9779-2b45de88f238 rr:objectMap _:node18u1ra1vnx4 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_4dd5c8ee-d60e-437d-9779-2b45de88f238 .
+
+km-dev:PredicateObjectMap_4dd5c8ee-d60e-437d-9779-2b45de88f238 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4dd5c8ee-d60e-437d-9779-2b45de88f238 .
+
+km-dev:PredicateObjectMap_51b4d2fb-3e2a-435b-a7ab-233270082568 rr:predicate dcterms:creator .
+
+km-dev:RefObjectMap_b64cf1f8-f4ce-4807-bdcc-d206539712e8 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap km-dev:RefObjectMap_b64cf1f8-f4ce-4807-bdcc-d206539712e8 .
+
+km-dev:PredicateObjectMap_51b4d2fb-3e2a-435b-a7ab-233270082568 rr:objectMap km-dev:RefObjectMap_b64cf1f8-f4ce-4807-bdcc-d206539712e8 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_51b4d2fb-3e2a-435b-a7ab-233270082568 .
+
+km-dev:PredicateObjectMap_51b4d2fb-3e2a-435b-a7ab-233270082568 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_51b4d2fb-3e2a-435b-a7ab-233270082568 .
+
+km-dev:PredicateObjectMap_222d7c42-a597-494f-bf0d-ec7b00e5eaf9 rr:predicate dcterms:extent .
+
+_:node18u1ra1vnx5 rr:column "[\"paintings\",\"dimensions\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx5 .
+
+km-dev:PredicateObjectMap_222d7c42-a597-494f-bf0d-ec7b00e5eaf9 rr:objectMap _:node18u1ra1vnx5 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_222d7c42-a597-494f-bf0d-ec7b00e5eaf9 .
+
+km-dev:PredicateObjectMap_222d7c42-a597-494f-bf0d-ec7b00e5eaf9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_222d7c42-a597-494f-bf0d-ec7b00e5eaf9 .
+
+km-dev:PredicateObjectMap_dfdae8e3-05f2-468f-b2e4-c0e83a9fa584 rr:predicate dcterms:medium .
+
+_:node18u1ra1vnx6 rr:column "[\"paintings\",\"medium\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx6 .
+
+km-dev:PredicateObjectMap_dfdae8e3-05f2-468f-b2e4-c0e83a9fa584 rr:objectMap _:node18u1ra1vnx6 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_dfdae8e3-05f2-468f-b2e4-c0e83a9fa584 .
+
+km-dev:PredicateObjectMap_dfdae8e3-05f2-468f-b2e4-c0e83a9fa584 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dfdae8e3-05f2-468f-b2e4-c0e83a9fa584 .
+
+km-dev:PredicateObjectMap_cde863f4-0b2e-49c0-96e1-d2073530a3d5 rr:predicate dcterms:provenance .
+
+_:node18u1ra1vnx7 rr:column "[\"paintings\",\"credit\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx7 .
+
+km-dev:PredicateObjectMap_cde863f4-0b2e-49c0-96e1-d2073530a3d5 rr:objectMap _:node18u1ra1vnx7 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_cde863f4-0b2e-49c0-96e1-d2073530a3d5 .
+
+km-dev:PredicateObjectMap_cde863f4-0b2e-49c0-96e1-d2073530a3d5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cde863f4-0b2e-49c0-96e1-d2073530a3d5 .
+
+km-dev:PredicateObjectMap_9f38c178-6066-4299-a84c-7e0dfeb4d5bd rr:predicate dcterms:provenance .
+
+_:node18u1ra1vnx8 rr:column "[\"paintings\",\"provenance\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx8 .
+
+km-dev:PredicateObjectMap_9f38c178-6066-4299-a84c-7e0dfeb4d5bd rr:objectMap _:node18u1ra1vnx8 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_9f38c178-6066-4299-a84c-7e0dfeb4d5bd .
+
+km-dev:PredicateObjectMap_9f38c178-6066-4299-a84c-7e0dfeb4d5bd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9f38c178-6066-4299-a84c-7e0dfeb4d5bd .
+
+km-dev:PredicateObjectMap_89d94102-3849-4ba5-a2c3-113c259ff8c1 rr:predicate dcterms:title .
+
+_:node18u1ra1vnx9 rr:column "[\"paintings\",\"title\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx9 .
+
+km-dev:PredicateObjectMap_89d94102-3849-4ba5-a2c3-113c259ff8c1 rr:objectMap _:node18u1ra1vnx9 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_89d94102-3849-4ba5-a2c3-113c259ff8c1 .
+
+km-dev:PredicateObjectMap_89d94102-3849-4ba5-a2c3-113c259ff8c1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_89d94102-3849-4ba5-a2c3-113c259ff8c1 .
+
+km-dev:PredicateObjectMap_f55ed790-d1bd-42c5-9467-b09c76218bb1 rr:predicate aac-ont:accessionNumber .
+
+_:node18u1ra1vnx10 rr:column "[\"paintings\",\"accession\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx10 .
+
+km-dev:PredicateObjectMap_f55ed790-d1bd-42c5-9467-b09c76218bb1 rr:objectMap _:node18u1ra1vnx10 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_f55ed790-d1bd-42c5-9467-b09c76218bb1 .
+
+km-dev:PredicateObjectMap_f55ed790-d1bd-42c5-9467-b09c76218bb1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f55ed790-d1bd-42c5-9467-b09c76218bb1 .
+
+km-dev:PredicateObjectMap_f81373c0-4928-4b28-9dc3-b01ae5877c7f rr:predicate edm:hasType .
+
+km-dev:RefObjectMap_b32f42b4-dde0-4a7b-90b5-c78c48995b37 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap km-dev:RefObjectMap_b32f42b4-dde0-4a7b-90b5-c78c48995b37 .
+
+km-dev:PredicateObjectMap_f81373c0-4928-4b28-9dc3-b01ae5877c7f rr:objectMap km-dev:RefObjectMap_b32f42b4-dde0-4a7b-90b5-c78c48995b37 .
+
+km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 rr:predicateObjectMap km-dev:PredicateObjectMap_f81373c0-4928-4b28-9dc3-b01ae5877c7f .
+
+km-dev:PredicateObjectMap_f81373c0-4928-4b28-9dc3-b01ae5877c7f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f81373c0-4928-4b28-9dc3-b01ae5877c7f .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d a rr:TriplesMap .
+
+_:node18u1ra1vnx1 km-dev:hasTriplesMap km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx11 rr:tableName "s15-s-detroit-institute-of-art.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasLogicalTable _:node18u1ra1vnx11 .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d rr:logicalTable _:node18u1ra1vnx11 ;
+	rr:subjectMap _:node18u1ra1vnx12 .
+
+_:node18u1ra1vnx1 km-dev:hasSubjectMap _:node18u1ra1vnx12 .
+
+_:node18u1ra1vnx12 km-dev:isPartOfMapping _:node18u1ra1vnx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/Person1" ;
+	rr:class aac-ont:Person ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:Person1" .
+
+km-dev:PredicateObjectMap_6448248f-3913-4ae4-a9c0-e754fd857915 rr:predicate ElementsGr2:countryAssociatedWithThePerson .
+
+_:node18u1ra1vnx13 rr:column "[\"paintings\",\"nationality\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx13 .
+
+km-dev:PredicateObjectMap_6448248f-3913-4ae4-a9c0-e754fd857915 rr:objectMap _:node18u1ra1vnx13 .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d rr:predicateObjectMap km-dev:PredicateObjectMap_6448248f-3913-4ae4-a9c0-e754fd857915 .
+
+km-dev:PredicateObjectMap_6448248f-3913-4ae4-a9c0-e754fd857915 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6448248f-3913-4ae4-a9c0-e754fd857915 .
+
+km-dev:PredicateObjectMap_e3169b69-2d64-447b-b34a-b7dba7bb3b22 rr:predicate ElementsGr2:dateOfBirth .
+
+_:node18u1ra1vnx14 rr:column "[\"paintings\",\"birth\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx14 .
+
+km-dev:PredicateObjectMap_e3169b69-2d64-447b-b34a-b7dba7bb3b22 rr:objectMap _:node18u1ra1vnx14 .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d rr:predicateObjectMap km-dev:PredicateObjectMap_e3169b69-2d64-447b-b34a-b7dba7bb3b22 .
+
+km-dev:PredicateObjectMap_e3169b69-2d64-447b-b34a-b7dba7bb3b22 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e3169b69-2d64-447b-b34a-b7dba7bb3b22 .
+
+km-dev:PredicateObjectMap_b79e932a-d6af-4223-b68c-b1fb0e3a1a3b rr:predicate ElementsGr2:dateOfDeath .
+
+_:node18u1ra1vnx15 rr:column "[\"paintings\",\"death\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx15 .
+
+km-dev:PredicateObjectMap_b79e932a-d6af-4223-b68c-b1fb0e3a1a3b rr:objectMap _:node18u1ra1vnx15 .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d rr:predicateObjectMap km-dev:PredicateObjectMap_b79e932a-d6af-4223-b68c-b1fb0e3a1a3b .
+
+km-dev:PredicateObjectMap_b79e932a-d6af-4223-b68c-b1fb0e3a1a3b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b79e932a-d6af-4223-b68c-b1fb0e3a1a3b .
+
+km-dev:PredicateObjectMap_a9cbc190-4f91-446f-9e2a-304aa1becb9f rr:predicate ElementsGr2:nameOfThePerson .
+
+_:node18u1ra1vnx16 rr:column "[\"paintings\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx16 .
+
+km-dev:PredicateObjectMap_a9cbc190-4f91-446f-9e2a-304aa1becb9f rr:objectMap _:node18u1ra1vnx16 .
+
+km-dev:TriplesMap_07059c73-7d9e-427c-80b5-cf5b25e0211d rr:predicateObjectMap km-dev:PredicateObjectMap_a9cbc190-4f91-446f-9e2a-304aa1becb9f .
+
+km-dev:PredicateObjectMap_a9cbc190-4f91-446f-9e2a-304aa1becb9f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a9cbc190-4f91-446f-9e2a-304aa1becb9f .
+
+km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 a rr:TriplesMap .
+
+_:node18u1ra1vnx1 km-dev:hasTriplesMap km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 .
+
+km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx17 rr:tableName "s15-s-detroit-institute-of-art.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasLogicalTable _:node18u1ra1vnx17 .
+
+km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 rr:logicalTable _:node18u1ra1vnx17 ;
+	rr:subjectMap _:node18u1ra1vnx18 .
+
+_:node18u1ra1vnx1 km-dev:hasSubjectMap _:node18u1ra1vnx18 .
+
+_:node18u1ra1vnx18 km-dev:isPartOfMapping _:node18u1ra1vnx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2008/05/skos#Concept1" ;
+	rr:class skos:Concept ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "skos:Concept1" .
+
+km-dev:PredicateObjectMap_81d7ebed-c8eb-4eae-acc8-26a64196a193 rr:predicate skos:prefLabel .
+
+_:node18u1ra1vnx19 rr:column "[\"paintings\",\"classification\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap _:node18u1ra1vnx19 .
+
+km-dev:PredicateObjectMap_81d7ebed-c8eb-4eae-acc8-26a64196a193 rr:objectMap _:node18u1ra1vnx19 .
+
+km-dev:TriplesMap_86c227cb-57c1-45c8-9e7b-c72b1d491619 rr:predicateObjectMap km-dev:PredicateObjectMap_81d7ebed-c8eb-4eae-acc8-26a64196a193 .
+
+km-dev:PredicateObjectMap_81d7ebed-c8eb-4eae-acc8-26a64196a193 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_81d7ebed-c8eb-4eae-acc8-26a64196a193 .
+
+km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 a rr:TriplesMap .
+
+_:node18u1ra1vnx1 km-dev:hasTriplesMap km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 .
+
+km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx20 rr:tableName "s15-s-detroit-institute-of-art.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasLogicalTable _:node18u1ra1vnx20 .
+
+km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 rr:logicalTable _:node18u1ra1vnx20 ;
+	rr:subjectMap _:node18u1ra1vnx21 .
+
+_:node18u1ra1vnx1 km-dev:hasSubjectMap _:node18u1ra1vnx21 .
+
+_:node18u1ra1vnx21 km-dev:isPartOfMapping _:node18u1ra1vnx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/EuropeanaAggregation1" ;
+	rr:class edm:EuropeanaAggregation ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "edm:EuropeanaAggregation1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_cbc45ab9-6243-4e09-91ee-17e6786b7c72 rr:predicate edm:aggregatedCHO .
+
+km-dev:RefObjectMap_2d5aa0cd-9752-4cd1-96e3-0b22ade526c4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9d5462c7-a6a9-4a00-a50f-05c58b533a80 ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap km-dev:RefObjectMap_2d5aa0cd-9752-4cd1-96e3-0b22ade526c4 .
+
+km-dev:PredicateObjectMap_cbc45ab9-6243-4e09-91ee-17e6786b7c72 rr:objectMap km-dev:RefObjectMap_2d5aa0cd-9752-4cd1-96e3-0b22ade526c4 .
+
+km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 rr:predicateObjectMap km-dev:PredicateObjectMap_cbc45ab9-6243-4e09-91ee-17e6786b7c72 .
+
+km-dev:PredicateObjectMap_cbc45ab9-6243-4e09-91ee-17e6786b7c72 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cbc45ab9-6243-4e09-91ee-17e6786b7c72 .
+
+km-dev:PredicateObjectMap_ec3f7b8f-3f23-42a0-b640-95d400d247f3 rr:predicate edm:hasView .
+
+km-dev:RefObjectMap_2e9eb3aa-5f7f-4cfe-b38f-cc79f6241565 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3b87d4b5-9457-4a53-b3f2-6fa44638a2b5 ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasObjectMap km-dev:RefObjectMap_2e9eb3aa-5f7f-4cfe-b38f-cc79f6241565 .
+
+km-dev:PredicateObjectMap_ec3f7b8f-3f23-42a0-b640-95d400d247f3 rr:objectMap km-dev:RefObjectMap_2e9eb3aa-5f7f-4cfe-b38f-cc79f6241565 .
+
+km-dev:TriplesMap_854f0278-946b-4320-a038-b41019452f80 rr:predicateObjectMap km-dev:PredicateObjectMap_ec3f7b8f-3f23-42a0-b640-95d400d247f3 .
+
+km-dev:PredicateObjectMap_ec3f7b8f-3f23-42a0-b640-95d400d247f3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ec3f7b8f-3f23-42a0-b640-95d400d247f3 .
+
+km-dev:TriplesMap_3b87d4b5-9457-4a53-b3f2-6fa44638a2b5 a rr:TriplesMap .
+
+_:node18u1ra1vnx1 km-dev:hasTriplesMap km-dev:TriplesMap_3b87d4b5-9457-4a53-b3f2-6fa44638a2b5 .
+
+km-dev:TriplesMap_3b87d4b5-9457-4a53-b3f2-6fa44638a2b5 km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx22 rr:tableName "s15-s-detroit-institute-of-art.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18u1ra1vnx1 .
+
+_:node18u1ra1vnx1 km-dev:hasLogicalTable _:node18u1ra1vnx22 .
+
+km-dev:TriplesMap_3b87d4b5-9457-4a53-b3f2-6fa44638a2b5 rr:logicalTable _:node18u1ra1vnx22 ;
+	rr:subjectMap _:node18u1ra1vnx23 .
+
+_:node18u1ra1vnx1 km-dev:hasSubjectMap _:node18u1ra1vnx23 .
+
+_:node18u1ra1vnx23 km-dev:isPartOfMapping _:node18u1ra1vnx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/WebResource1" ;
+	rr:class edm:WebResource ;
+	rr:template "{[\"paintings\",\"imageURL\"]}" .

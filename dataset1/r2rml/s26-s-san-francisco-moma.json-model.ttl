@@ -1,0 +1,556 @@
+@prefix status: <http://metadataregistry.org/uri/RegStatus/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix schema: <http://schema.org/> .
+@prefix aac-ont: <http://www.americanartcollaborative.org/ontology/> .
+@prefix reg: <http://metadataregistry.org/uri/profile/RegAp/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix msg0: <http://web.resource.org/cc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix FRBRentitiesRDA: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/> .
+@prefix saam-ont: <http://americanart.si.edu/ontology/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ElementsGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc-crm#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node18ubd9jllx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "s26-s-san-francisco-moma.json" ;
+	km-dev:modelPublicationTime "1406984834741"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"artistName\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthYear\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"title\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"dimensions\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"url\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"image-URL\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"type\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathYear\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"copyright\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthPlaceState\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathPlaceState\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"credit\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"artistName\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthYear\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"title\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"dimensions\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"url\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"image-URL\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"type\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathYear\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"nationality\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"copyright\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthPlaceState\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathPlaceState\"}],[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"credit\"}]]" ;
+	km-dev:hasModelLabel "s26-s-san-francisco-moma.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://www.americanartcollaborative.org/ontology/accessionNumber\",\"DomainLabel\":\"aac-ont:CulturalHeritageObject1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"accession-id\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"accession-id\\\"}]}]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"art-works\"}],\"visible\":true,\"hideable\":false,\"name\":\"art-works\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"art-work\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"accession-id\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"accession-id\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artistName\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"artistName\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthYear\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathYear\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"collection\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"collection\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"nationality\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"nationality\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"copyright\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"copyright\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"credit\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"credit\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"dimensions\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"dimensions\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"image-URL\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"image-URL\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"type\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"type\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"title\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"title\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"when-acquired\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"when-acquired\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"keywords\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"keywords\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"}]\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"artistName\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/nameOfThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"artistName\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"artistName\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"artistName\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"artistName\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthYear\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfBirth\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"birthYear\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"birthYear\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthYear\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthYear\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathYear\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/dateOfDeath\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"deathYear\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"deathYear\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathYear\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathYear\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"nationality\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://rdvocab.info/ElementsGr2/countryAssociatedWithThePerson\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Person1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Person\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"nationality\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"nationality\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"dimensions\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/extent\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1 (add)\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"dimensions\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"dimensions\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"dimensions\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://www.americanartcollaborative.org/ontology/sitter\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Person\",\"edgeId\":\"http://purl.org/dc/terms/creator\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"credit\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/provenance\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"credit\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"credit\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"credit\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"credit\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"copyright\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/rightsHolder\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"copyright\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"copyright\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"copyright\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"copyright\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"title\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/title\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"title\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"title\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.americanartcollaborative.org/ontology/accessionNumber\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:CulturalHeritageObject1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"accession-id\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"accession-id\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"accession-id\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Place\",\"edgeId\":\"http://rdvocab.info/ElementsGr2/placeOfBirth\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Place1 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthPlaceState\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2000/01/rdf-schema#label\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Place1\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Place1\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Place\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"birthPlaceState\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"birthPlaceState\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthPlaceState\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"birthPlaceState\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/Place\",\"edgeId\":\"http://rdvocab.info/ElementsGr2/placeOfDeath\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/Person1\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/Place2 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/Person1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathPlaceState\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2000/01/rdf-schema#label\",\"isPrimary\":true,\"DomainLabel\":\"aac-ont:Place2\",\"DomainId\":\"http://www.americanartcollaborative.org/ontology/Place2\",\"DomainUri\":\"http://www.americanartcollaborative.org/ontology/Place\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"deathPlaceState\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"deathPlaceState\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathPlaceState\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"deathPlaceState\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.w3.org/2008/05/skos#Concept\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasType\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://www.w3.org/2008/05/skos#Concept1 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2008/05/skos#prefLabel\",\"isPrimary\":true,\"DomainLabel\":\"skos:Concept1\",\"DomainId\":\"http://www.w3.org/2008/05/skos#Concept1\",\"DomainUri\":\"http://www.w3.org/2008/05/skos#Concept\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"type\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"type\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"type\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"type\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://xmlns.com/foaf/0.1/Document\",\"edgeId\":\"http://xmlns.com/foaf/0.1/page\",\"edgeSourceId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeTargetId\":\"http://xmlns.com/foaf/0.1/Document1 (add)\",\"edgeSourceUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://xmlns.com/foaf/0.1/Document1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"url\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"foaf:Document1\",\"DomainId\":\"http://xmlns.com/foaf/0.1/Document1\",\"DomainUri\":\"http://xmlns.com/foaf/0.1/Document\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"url\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"url\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"url\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"url\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/aggregatedCHO\",\"edgeSourceId\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1 (add)\",\"edgeTargetId\":\"http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1\",\"edgeSourceUri\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP20:WS1AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.europeana.eu/schemas/edm/WebResource\",\"edgeId\":\"http://www.europeana.eu/schemas/edm/hasView\",\"edgeSourceId\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1\",\"edgeTargetId\":\"http://www.europeana.eu/schemas/edm/WebResource1 (add)\",\"edgeSourceUri\":\"http://www.europeana.eu/schemas/edm/EuropeanaAggregation1\"}],\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.europeana.eu/schemas/edm/WebResource1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"image-URL\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"edm:WebResource1\",\"DomainId\":\"http://www.europeana.eu/schemas/edm/WebResource1\",\"DomainUri\":\"http://www.europeana.eu/schemas/edm/WebResource\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"},{\"name\":\"inputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"image-URL\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[{\\\"value\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"},{\\\"columnName\\\":\\\"image-URL\\\"}]}]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"image-URL\"}]}],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[{\"value\":[{\"columnName\":\"art-works\"},{\"columnName\":\"art-work\"},{\"columnName\":\"image-URL\"}]}],\"type\":\"hNodeIdList\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"art-works\"}],\"visible\":true,\"hideable\":false,\"name\":\"art-works\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"art-work\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"accession-id\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"accession-id\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artistName\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"artistName\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthYear\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"collection\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"collection\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"copyright\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"copyright\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"credit\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"credit\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"dimensions\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"dimensions\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"image-URL\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"image-URL\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"nationality\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"nationality\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"title\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"title\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"type\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"type\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"when-acquired\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"when-acquired\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"keywords\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"keywords\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathYear\\\\\\\"}]\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"orderedColumns\",\"value\":[{\"id\":[{\"columnName\":\"art-works\"}],\"visible\":true,\"hideable\":false,\"name\":\"art-works\",\"children\":\"[{\\\"id\\\":[{\\\"columnName\\\":\\\"art-works\\\"},{\\\"columnName\\\":\\\"art-work\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"art-work\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"accession-id\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"accession-id\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"artistName\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"artistName\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceCity\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"birthYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"birthYear\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathYear\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathYear\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceState\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"collection\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"collection\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"nationality\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"nationality\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"copyright\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"copyright\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"credit\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"credit\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"dimensions\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"dimensions\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"image-URL\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"image-URL\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"type\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"type\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"title\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"title\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"when-acquired\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"when-acquired\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"keywords\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"keywords\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-works\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"art-work\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"deathPlaceCity\\\\\\\"}]\\\"}]\"}],\"type\":\"orderedColumns\"},{\"name\":\"inputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":\"[]\",\"type\":\"hNodeIdList\"},{\"name\":\"inputColumns\",\"value\":[],\"type\":\"hNodeIdList\"},{\"name\":\"outputColumns\",\"value\":[],\"type\":\"hNodeIdList\"}],\"commandName\":\"OrganizeColumnsCommand\"}]" .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx2 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx2 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:logicalTable _:node18ubd9jllx2 ;
+	rr:subjectMap _:node18ubd9jllx3 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx3 .
+
+_:node18ubd9jllx3 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/CulturalHeritageObject1" ;
+	rr:class aac-ont:CulturalHeritageObject ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:CulturalHeritageObject1" .
+
+km-dev:PredicateObjectMap_664d229e-c7f6-4451-a7ae-a0192280559c rr:predicate dcterms:creator .
+
+km-dev:RefObjectMap_28eeb7e6-4dc6-45e6-a3f0-3da89e5c309b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_28eeb7e6-4dc6-45e6-a3f0-3da89e5c309b .
+
+km-dev:PredicateObjectMap_664d229e-c7f6-4451-a7ae-a0192280559c rr:objectMap km-dev:RefObjectMap_28eeb7e6-4dc6-45e6-a3f0-3da89e5c309b .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_664d229e-c7f6-4451-a7ae-a0192280559c .
+
+km-dev:PredicateObjectMap_664d229e-c7f6-4451-a7ae-a0192280559c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_664d229e-c7f6-4451-a7ae-a0192280559c .
+
+km-dev:PredicateObjectMap_42d3edda-bfe6-4970-83f2-fee92c9fc9cc rr:predicate dcterms:extent .
+
+_:node18ubd9jllx4 rr:column "[\"art-works\",\"art-work\",\"dimensions\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx4 .
+
+km-dev:PredicateObjectMap_42d3edda-bfe6-4970-83f2-fee92c9fc9cc rr:objectMap _:node18ubd9jllx4 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_42d3edda-bfe6-4970-83f2-fee92c9fc9cc .
+
+km-dev:PredicateObjectMap_42d3edda-bfe6-4970-83f2-fee92c9fc9cc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_42d3edda-bfe6-4970-83f2-fee92c9fc9cc .
+
+km-dev:PredicateObjectMap_ab348845-a522-438d-af14-3d5b018a7db2 rr:predicate dcterms:provenance .
+
+_:node18ubd9jllx5 rr:column "[\"art-works\",\"art-work\",\"credit\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx5 .
+
+km-dev:PredicateObjectMap_ab348845-a522-438d-af14-3d5b018a7db2 rr:objectMap _:node18ubd9jllx5 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_ab348845-a522-438d-af14-3d5b018a7db2 .
+
+km-dev:PredicateObjectMap_ab348845-a522-438d-af14-3d5b018a7db2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab348845-a522-438d-af14-3d5b018a7db2 .
+
+km-dev:PredicateObjectMap_d2df0d88-4ed2-4446-85f6-c4582afe7561 rr:predicate dcterms:rightsHolder .
+
+_:node18ubd9jllx6 rr:column "[\"art-works\",\"art-work\",\"copyright\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx6 .
+
+km-dev:PredicateObjectMap_d2df0d88-4ed2-4446-85f6-c4582afe7561 rr:objectMap _:node18ubd9jllx6 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_d2df0d88-4ed2-4446-85f6-c4582afe7561 .
+
+km-dev:PredicateObjectMap_d2df0d88-4ed2-4446-85f6-c4582afe7561 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d2df0d88-4ed2-4446-85f6-c4582afe7561 .
+
+km-dev:PredicateObjectMap_83a413e8-cfe5-4095-acb3-cfd1c901d0c3 rr:predicate dcterms:title .
+
+_:node18ubd9jllx7 rr:column "[\"art-works\",\"art-work\",\"title\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx7 .
+
+km-dev:PredicateObjectMap_83a413e8-cfe5-4095-acb3-cfd1c901d0c3 rr:objectMap _:node18ubd9jllx7 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_83a413e8-cfe5-4095-acb3-cfd1c901d0c3 .
+
+km-dev:PredicateObjectMap_83a413e8-cfe5-4095-acb3-cfd1c901d0c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83a413e8-cfe5-4095-acb3-cfd1c901d0c3 .
+
+km-dev:PredicateObjectMap_95c1f42a-189c-469c-9a3f-db06fc869cf0 rr:predicate aac-ont:accessionNumber .
+
+_:node18ubd9jllx8 rr:column "[\"art-works\",\"art-work\",\"accession-id\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx8 .
+
+km-dev:PredicateObjectMap_95c1f42a-189c-469c-9a3f-db06fc869cf0 rr:objectMap _:node18ubd9jllx8 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_95c1f42a-189c-469c-9a3f-db06fc869cf0 .
+
+km-dev:PredicateObjectMap_95c1f42a-189c-469c-9a3f-db06fc869cf0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_95c1f42a-189c-469c-9a3f-db06fc869cf0 .
+
+km-dev:PredicateObjectMap_e1b06ca2-3dfc-4603-a7e3-226699ceaaf7 rr:predicate edm:hasType .
+
+km-dev:RefObjectMap_33789d1f-fa0f-49fb-84d0-97d1c446f303 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_33789d1f-fa0f-49fb-84d0-97d1c446f303 .
+
+km-dev:PredicateObjectMap_e1b06ca2-3dfc-4603-a7e3-226699ceaaf7 rr:objectMap km-dev:RefObjectMap_33789d1f-fa0f-49fb-84d0-97d1c446f303 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_e1b06ca2-3dfc-4603-a7e3-226699ceaaf7 .
+
+km-dev:PredicateObjectMap_e1b06ca2-3dfc-4603-a7e3-226699ceaaf7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e1b06ca2-3dfc-4603-a7e3-226699ceaaf7 .
+
+km-dev:PredicateObjectMap_323d7ba7-102c-4dc3-ac02-9ecbe55087c8 rr:predicate foaf:page .
+
+km-dev:RefObjectMap_51e867a2-92bf-4fce-bc01-2f600a6d0023 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1df09080-a906-4cd3-acad-6c6f15d99937 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_51e867a2-92bf-4fce-bc01-2f600a6d0023 .
+
+km-dev:PredicateObjectMap_323d7ba7-102c-4dc3-ac02-9ecbe55087c8 rr:objectMap km-dev:RefObjectMap_51e867a2-92bf-4fce-bc01-2f600a6d0023 .
+
+km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 rr:predicateObjectMap km-dev:PredicateObjectMap_323d7ba7-102c-4dc3-ac02-9ecbe55087c8 .
+
+km-dev:PredicateObjectMap_323d7ba7-102c-4dc3-ac02-9ecbe55087c8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_323d7ba7-102c-4dc3-ac02-9ecbe55087c8 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx9 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx9 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:logicalTable _:node18ubd9jllx9 ;
+	rr:subjectMap _:node18ubd9jllx10 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx10 .
+
+_:node18ubd9jllx10 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/Person1" ;
+	rr:class aac-ont:Person ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:Person1" .
+
+km-dev:PredicateObjectMap_2434e993-dd48-4e56-b44d-c12570e390bf rr:predicate ElementsGr2:countryAssociatedWithThePerson .
+
+_:node18ubd9jllx11 rr:column "[\"art-works\",\"art-work\",\"nationality\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx11 .
+
+km-dev:PredicateObjectMap_2434e993-dd48-4e56-b44d-c12570e390bf rr:objectMap _:node18ubd9jllx11 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_2434e993-dd48-4e56-b44d-c12570e390bf .
+
+km-dev:PredicateObjectMap_2434e993-dd48-4e56-b44d-c12570e390bf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2434e993-dd48-4e56-b44d-c12570e390bf .
+
+km-dev:PredicateObjectMap_b31f8df2-8cbf-4b82-a3d0-9f33d3e447b3 rr:predicate ElementsGr2:dateOfBirth .
+
+_:node18ubd9jllx12 rr:column "[\"art-works\",\"art-work\",\"birthYear\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx12 .
+
+km-dev:PredicateObjectMap_b31f8df2-8cbf-4b82-a3d0-9f33d3e447b3 rr:objectMap _:node18ubd9jllx12 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_b31f8df2-8cbf-4b82-a3d0-9f33d3e447b3 .
+
+km-dev:PredicateObjectMap_b31f8df2-8cbf-4b82-a3d0-9f33d3e447b3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b31f8df2-8cbf-4b82-a3d0-9f33d3e447b3 .
+
+km-dev:PredicateObjectMap_9a3b0595-981c-476b-a9fc-662853f3b9c3 rr:predicate ElementsGr2:dateOfDeath .
+
+_:node18ubd9jllx13 rr:column "[\"art-works\",\"art-work\",\"deathYear\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx13 .
+
+km-dev:PredicateObjectMap_9a3b0595-981c-476b-a9fc-662853f3b9c3 rr:objectMap _:node18ubd9jllx13 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_9a3b0595-981c-476b-a9fc-662853f3b9c3 .
+
+km-dev:PredicateObjectMap_9a3b0595-981c-476b-a9fc-662853f3b9c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9a3b0595-981c-476b-a9fc-662853f3b9c3 .
+
+km-dev:PredicateObjectMap_b44d823d-6b7f-490e-84e4-9482ed7f5616 rr:predicate ElementsGr2:nameOfThePerson .
+
+_:node18ubd9jllx14 rr:column "[\"art-works\",\"art-work\",\"artistName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx14 .
+
+km-dev:PredicateObjectMap_b44d823d-6b7f-490e-84e4-9482ed7f5616 rr:objectMap _:node18ubd9jllx14 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_b44d823d-6b7f-490e-84e4-9482ed7f5616 .
+
+km-dev:PredicateObjectMap_b44d823d-6b7f-490e-84e4-9482ed7f5616 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b44d823d-6b7f-490e-84e4-9482ed7f5616 .
+
+km-dev:PredicateObjectMap_a2f87d81-a33b-4701-b288-7c1717ca9edf rr:predicate ElementsGr2:placeOfBirth .
+
+km-dev:RefObjectMap_8f2f3e93-3c80-43d5-a6b8-ca5c3d9211db a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_8f2f3e93-3c80-43d5-a6b8-ca5c3d9211db .
+
+km-dev:PredicateObjectMap_a2f87d81-a33b-4701-b288-7c1717ca9edf rr:objectMap km-dev:RefObjectMap_8f2f3e93-3c80-43d5-a6b8-ca5c3d9211db .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_a2f87d81-a33b-4701-b288-7c1717ca9edf .
+
+km-dev:PredicateObjectMap_a2f87d81-a33b-4701-b288-7c1717ca9edf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2f87d81-a33b-4701-b288-7c1717ca9edf .
+
+km-dev:PredicateObjectMap_43e4ba7a-938e-463b-96df-b0cb252706c4 rr:predicate ElementsGr2:placeOfDeath .
+
+km-dev:RefObjectMap_d7d879d5-d3a9-42ff-8c88-9a8e883e60b9 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_d7d879d5-d3a9-42ff-8c88-9a8e883e60b9 .
+
+km-dev:PredicateObjectMap_43e4ba7a-938e-463b-96df-b0cb252706c4 rr:objectMap km-dev:RefObjectMap_d7d879d5-d3a9-42ff-8c88-9a8e883e60b9 .
+
+km-dev:TriplesMap_36aa91b1-beef-46b7-a6e0-08e98d93a7d0 rr:predicateObjectMap km-dev:PredicateObjectMap_43e4ba7a-938e-463b-96df-b0cb252706c4 .
+
+km-dev:PredicateObjectMap_43e4ba7a-938e-463b-96df-b0cb252706c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_43e4ba7a-938e-463b-96df-b0cb252706c4 .
+
+km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 .
+
+km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx15 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx15 .
+
+km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 rr:logicalTable _:node18ubd9jllx15 ;
+	rr:subjectMap _:node18ubd9jllx16 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx16 .
+
+_:node18ubd9jllx16 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2008/05/skos#Concept1" ;
+	rr:class skos:Concept ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "skos:Concept1" .
+
+km-dev:PredicateObjectMap_16706f86-5f79-4219-9521-ffb55018d111 rr:predicate skos:prefLabel .
+
+_:node18ubd9jllx17 rr:column "[\"art-works\",\"art-work\",\"type\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx17 .
+
+km-dev:PredicateObjectMap_16706f86-5f79-4219-9521-ffb55018d111 rr:objectMap _:node18ubd9jllx17 .
+
+km-dev:TriplesMap_4a64f3ec-aaba-4ca0-aa10-f7936eaefee7 rr:predicateObjectMap km-dev:PredicateObjectMap_16706f86-5f79-4219-9521-ffb55018d111 .
+
+km-dev:PredicateObjectMap_16706f86-5f79-4219-9521-ffb55018d111 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_16706f86-5f79-4219-9521-ffb55018d111 .
+
+km-dev:TriplesMap_1df09080-a906-4cd3-acad-6c6f15d99937 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_1df09080-a906-4cd3-acad-6c6f15d99937 .
+
+km-dev:TriplesMap_1df09080-a906-4cd3-acad-6c6f15d99937 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx18 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx18 .
+
+km-dev:TriplesMap_1df09080-a906-4cd3-acad-6c6f15d99937 rr:logicalTable _:node18ubd9jllx18 ;
+	rr:subjectMap _:node18ubd9jllx19 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx19 .
+
+_:node18ubd9jllx19 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document1" ;
+	rr:class foaf:Document ;
+	rr:template "{[\"art-works\",\"art-work\",\"url\"]}" .
+
+km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 .
+
+km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx20 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx20 .
+
+km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 rr:logicalTable _:node18ubd9jllx20 ;
+	rr:subjectMap _:node18ubd9jllx21 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx21 .
+
+_:node18ubd9jllx21 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/Place1" ;
+	rr:class aac-ont:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:Place1" .
+
+km-dev:PredicateObjectMap_261b77c5-bf4d-4320-aded-827c8b7fa858 rr:predicate rdfs:label .
+
+_:node18ubd9jllx22 rr:column "[\"art-works\",\"art-work\",\"birthPlaceState\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx22 .
+
+km-dev:PredicateObjectMap_261b77c5-bf4d-4320-aded-827c8b7fa858 rr:objectMap _:node18ubd9jllx22 .
+
+km-dev:TriplesMap_31acc915-6df8-4b9c-89e0-f178f7a0f145 rr:predicateObjectMap km-dev:PredicateObjectMap_261b77c5-bf4d-4320-aded-827c8b7fa858 .
+
+km-dev:PredicateObjectMap_261b77c5-bf4d-4320-aded-827c8b7fa858 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_261b77c5-bf4d-4320-aded-827c8b7fa858 .
+
+km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a .
+
+km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx23 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx23 .
+
+km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a rr:logicalTable _:node18ubd9jllx23 ;
+	rr:subjectMap _:node18ubd9jllx24 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx24 .
+
+_:node18ubd9jllx24 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.americanartcollaborative.org/ontology/Place2" ;
+	rr:class aac-ont:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "aac-ont:Place2" .
+
+km-dev:PredicateObjectMap_b358ccbf-cb1d-4c3b-b19c-e05f80ea2a87 rr:predicate rdfs:label .
+
+_:node18ubd9jllx25 rr:column "[\"art-works\",\"art-work\",\"deathPlaceState\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap _:node18ubd9jllx25 .
+
+km-dev:PredicateObjectMap_b358ccbf-cb1d-4c3b-b19c-e05f80ea2a87 rr:objectMap _:node18ubd9jllx25 .
+
+km-dev:TriplesMap_9ea8f653-6007-4662-bd62-3560d8d71e4a rr:predicateObjectMap km-dev:PredicateObjectMap_b358ccbf-cb1d-4c3b-b19c-e05f80ea2a87 .
+
+km-dev:PredicateObjectMap_b358ccbf-cb1d-4c3b-b19c-e05f80ea2a87 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b358ccbf-cb1d-4c3b-b19c-e05f80ea2a87 .
+
+km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 .
+
+km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx26 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx26 .
+
+km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 rr:logicalTable _:node18ubd9jllx26 ;
+	rr:subjectMap _:node18ubd9jllx27 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx27 .
+
+_:node18ubd9jllx27 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/EuropeanaAggregation1" ;
+	rr:class edm:EuropeanaAggregation ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "edm:EuropeanaAggregation1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ff81240d-c5fa-4c4c-81a3-349e92bc866e rr:predicate edm:aggregatedCHO .
+
+km-dev:RefObjectMap_7dc3effa-cb9f-4778-b767-14c5c8be2882 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1a06c41e-a49e-41b0-8bf7-28c77275b720 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_7dc3effa-cb9f-4778-b767-14c5c8be2882 .
+
+km-dev:PredicateObjectMap_ff81240d-c5fa-4c4c-81a3-349e92bc866e rr:objectMap km-dev:RefObjectMap_7dc3effa-cb9f-4778-b767-14c5c8be2882 .
+
+km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 rr:predicateObjectMap km-dev:PredicateObjectMap_ff81240d-c5fa-4c4c-81a3-349e92bc866e .
+
+km-dev:PredicateObjectMap_ff81240d-c5fa-4c4c-81a3-349e92bc866e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ff81240d-c5fa-4c4c-81a3-349e92bc866e .
+
+km-dev:PredicateObjectMap_b153aba3-4edd-40ae-b36e-1fae60e0fd29 rr:predicate edm:hasView .
+
+km-dev:RefObjectMap_91b72d83-e6f0-4eaa-bc0a-b049d4329f48 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_df433e99-5f29-447a-9ba9-bb3a30db1290 ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasObjectMap km-dev:RefObjectMap_91b72d83-e6f0-4eaa-bc0a-b049d4329f48 .
+
+km-dev:PredicateObjectMap_b153aba3-4edd-40ae-b36e-1fae60e0fd29 rr:objectMap km-dev:RefObjectMap_91b72d83-e6f0-4eaa-bc0a-b049d4329f48 .
+
+km-dev:TriplesMap_d63ae964-c0c8-46c5-a7a5-f64f039921f3 rr:predicateObjectMap km-dev:PredicateObjectMap_b153aba3-4edd-40ae-b36e-1fae60e0fd29 .
+
+km-dev:PredicateObjectMap_b153aba3-4edd-40ae-b36e-1fae60e0fd29 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b153aba3-4edd-40ae-b36e-1fae60e0fd29 .
+
+km-dev:TriplesMap_df433e99-5f29-447a-9ba9-bb3a30db1290 a rr:TriplesMap .
+
+_:node18ubd9jllx1 km-dev:hasTriplesMap km-dev:TriplesMap_df433e99-5f29-447a-9ba9-bb3a30db1290 .
+
+km-dev:TriplesMap_df433e99-5f29-447a-9ba9-bb3a30db1290 km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx28 rr:tableName "s26-s-san-francisco-moma.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18ubd9jllx1 .
+
+_:node18ubd9jllx1 km-dev:hasLogicalTable _:node18ubd9jllx28 .
+
+km-dev:TriplesMap_df433e99-5f29-447a-9ba9-bb3a30db1290 rr:logicalTable _:node18ubd9jllx28 ;
+	rr:subjectMap _:node18ubd9jllx29 .
+
+_:node18ubd9jllx1 km-dev:hasSubjectMap _:node18ubd9jllx29 .
+
+_:node18ubd9jllx29 km-dev:isPartOfMapping _:node18ubd9jllx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.europeana.eu/schemas/edm/WebResource1" ;
+	rr:class edm:WebResource ;
+	rr:template "{[\"art-works\",\"art-work\",\"image-URL\"]}" .

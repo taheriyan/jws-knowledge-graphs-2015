@@ -1,0 +1,43 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s14-s-california-african-american.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1\n"];
+n3[style="filled",color="white",fillcolor="lightgray",label="Person1\n"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="additionalInfo\n"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="technique\n"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="provenance\n"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="title\n"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="accessionId\n"];
+n10[style="filled",color="white",fillcolor="lightgray",label="Concept1\n"];
+n11[style="filled",color="white",fillcolor="lightgray",label="Document1\n"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="artist\n"];
+n13[style="filled",color="white",fillcolor="lightgray",label="Place1\n"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="activeAt\n"];
+n15[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1\n"];
+n16[style="filled",color="white",fillcolor="lightgray",label="WebResource1\n"];
+n17[shape="plaintext",style="filled",fillcolor="gold",label="imageUrl\n"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="type\n"];
+n19[shape="plaintext",style="filled",fillcolor="gold",label="url\n"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="creator\nw=10.0"]
+n2 -> n4[color="brown",fontcolor="black",label="description\nw=90.0"]
+n2 -> n5[color="brown",fontcolor="black",label="extent\nw=90.0"]
+n2 -> n6[color="brown",fontcolor="black",label="medium\nw=90.0"]
+n2 -> n7[color="brown",fontcolor="black",label="provenance\nw=90.0"]
+n2 -> n8[color="brown",fontcolor="black",label="title\nw=90.0"]
+n2 -> n9[color="brown",fontcolor="black",label="accessionNumber\nw=90.0"]
+n2 -> n10[color="brown",fontcolor="black",label="hasType\nw=10.0"]
+n2 -> n11[color="brown",fontcolor="black",label="page\nw=10.0"]
+n3 -> n12[color="brown",fontcolor="black",label="nameOfThePerson\nw=90.0"]
+n3 -> n13[color="brown",fontcolor="black",label="associatedPlace\nw=10.0"]
+n13 -> n14[color="brown",fontcolor="black",label="label\nw=90.0"]
+n15 -> n2[color="brown",fontcolor="black",label="aggregatedCHO\nw=10.0"]
+n15 -> n16[color="brown",fontcolor="black",label="hasView\nw=10.0"]
+n16 -> n17[color="brown",fontcolor="black",label="classLink\nw=90.0"]
+n10 -> n18[color="brown",fontcolor="black",label="prefLabel\nw=90.0"]
+n11 -> n19[color="brown",fontcolor="black",label="classLink\nw=90.0"]
+}
