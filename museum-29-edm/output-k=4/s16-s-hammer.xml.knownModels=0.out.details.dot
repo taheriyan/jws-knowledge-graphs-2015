@@ -1,0 +1,28 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s16-s-hammer.xml"
+subgraph cluster_0 {
+label="1-correct model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="year"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="description"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="title"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="artist"];
+n8[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n9[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="image"];
+}
+subgraph cluster_1 {
+label="candidate 0\nlink coherence:1.0\nconfidence:0.0\ncost:0.0\n-precision:0.0-recall:0.0"
+}
+n2 -> n3[color="brown",fontcolor="black",label="created"]
+n2 -> n4[color="brown",fontcolor="black",label="creator"]
+n2 -> n5[color="brown",fontcolor="black",label="description"]
+n2 -> n6[color="brown",fontcolor="black",label="title"]
+n4 -> n7[color="brown",fontcolor="black",label="nameOfThePerson"]
+n8 -> n2[color="brown",fontcolor="black",label="aggregatedCHO"]
+n8 -> n9[color="brown",fontcolor="black",label="hasView"]
+n9 -> n10[color="brown",fontcolor="black",label="classLink"]
+}

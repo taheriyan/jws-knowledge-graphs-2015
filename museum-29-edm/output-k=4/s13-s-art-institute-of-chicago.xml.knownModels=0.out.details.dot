@@ -1,0 +1,38 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s13-s-art-institute-of-chicago.xml"
+subgraph cluster_0 {
+label="1-correct model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="Dimensions"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="Typeofartwork"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="Credit"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="Titleofartwork"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="Accessionid"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="Nationality"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="birthDate"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="deathDate"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="Artistname"];
+n13[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n14[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n15[shape="plaintext",style="filled",fillcolor="gold",label="ImageURL"];
+}
+subgraph cluster_1 {
+label="candidate 0\nlink coherence:1.0\nconfidence:0.0\ncost:0.0\n-precision:0.0-recall:0.0"
+}
+n2 -> n3[color="brown",fontcolor="black",label="creator"]
+n2 -> n4[color="brown",fontcolor="black",label="extent"]
+n2 -> n5[color="brown",fontcolor="black",label="medium"]
+n2 -> n6[color="brown",fontcolor="black",label="provenance"]
+n2 -> n7[color="brown",fontcolor="black",label="title"]
+n2 -> n8[color="brown",fontcolor="black",label="accessionNumber"]
+n3 -> n9[color="brown",fontcolor="black",label="countryAssociatedWithThePerson"]
+n3 -> n10[color="brown",fontcolor="black",label="dateOfBirth"]
+n3 -> n11[color="brown",fontcolor="black",label="dateOfDeath"]
+n3 -> n12[color="brown",fontcolor="black",label="nameOfThePerson"]
+n13 -> n2[color="brown",fontcolor="black",label="aggregatedCHO"]
+n13 -> n14[color="brown",fontcolor="black",label="hasView"]
+n14 -> n15[color="brown",fontcolor="black",label="classLink"]
+}

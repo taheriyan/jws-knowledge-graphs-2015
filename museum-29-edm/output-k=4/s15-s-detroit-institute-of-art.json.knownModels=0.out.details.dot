@@ -1,0 +1,46 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s15-s-detroit-institute-of-art.json"
+subgraph cluster_0 {
+label="1-correct model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="date"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="dimensions"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="medium"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="credit"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="provenance"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="title"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="accession"];
+n11[style="filled",color="white",fillcolor="lightgray",label="Concept1"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="nationality"];
+n13[shape="plaintext",style="filled",fillcolor="gold",label="birth"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="death"];
+n15[shape="plaintext",style="filled",fillcolor="gold",label="name"];
+n16[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n17[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="imageURL"];
+n19[shape="plaintext",style="filled",fillcolor="gold",label="classification"];
+}
+subgraph cluster_1 {
+label="candidate 0\nlink coherence:1.0\nconfidence:0.0\ncost:0.0\n-precision:0.0-recall:0.0"
+}
+n2 -> n3[color="brown",fontcolor="black",label="created"]
+n2 -> n4[color="brown",fontcolor="black",label="creator"]
+n2 -> n5[color="brown",fontcolor="black",label="extent"]
+n2 -> n6[color="brown",fontcolor="black",label="medium"]
+n2 -> n7[color="brown",fontcolor="black",label="provenance"]
+n2 -> n8[color="brown",fontcolor="black",label="provenance"]
+n2 -> n9[color="brown",fontcolor="black",label="title"]
+n2 -> n10[color="brown",fontcolor="black",label="accessionNumber"]
+n2 -> n11[color="brown",fontcolor="black",label="hasType"]
+n4 -> n12[color="brown",fontcolor="black",label="countryAssociatedWithThePerson"]
+n4 -> n13[color="brown",fontcolor="black",label="dateOfBirth"]
+n4 -> n14[color="brown",fontcolor="black",label="dateOfDeath"]
+n4 -> n15[color="brown",fontcolor="black",label="nameOfThePerson"]
+n16 -> n2[color="brown",fontcolor="black",label="aggregatedCHO"]
+n16 -> n17[color="brown",fontcolor="black",label="hasView"]
+n17 -> n18[color="brown",fontcolor="black",label="classLink"]
+n11 -> n19[color="brown",fontcolor="black",label="prefLabel"]
+}

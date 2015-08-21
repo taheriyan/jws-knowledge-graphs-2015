@@ -1,0 +1,24 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s11-s-19-artists.json"
+subgraph cluster_0 {
+label="1-correct model"
+n2[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="long_biography"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="nationality"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="birthDate"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="deathDate"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="artist_name"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="occupation"];
+}
+subgraph cluster_1 {
+label="candidate 0\nlink coherence:1.0\nconfidence:0.0\ncost:0.0\n-precision:0.0-recall:0.0"
+}
+n2 -> n3[color="brown",fontcolor="black",label="biographicalInformation"]
+n2 -> n4[color="brown",fontcolor="black",label="countryAssociatedWithThePerson"]
+n2 -> n5[color="brown",fontcolor="black",label="dateOfBirth"]
+n2 -> n6[color="brown",fontcolor="black",label="dateOfDeath"]
+n2 -> n7[color="brown",fontcolor="black",label="nameOfThePerson"]
+n2 -> n8[color="brown",fontcolor="black",label="professionOrOccupation"]
+}

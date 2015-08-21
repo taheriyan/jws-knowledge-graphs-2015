@@ -1,0 +1,567 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s12-s-19-artworks.json"
+subgraph cluster_0 {
+label="1-correct model"
+n2[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="date_made"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="description"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="dimensions"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="technique"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="title"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="access_id"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="nationality"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="artist_name"];
+n12[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n13[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="img_url"];
+}
+subgraph cluster_1 {
+label="candidate 0\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.5020161005141488\nmapping score:0.5932646260973088\ncost:12.99937\n-precision:0.85-recall:0.92"
+n16[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n17[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject2"];
+n18[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n19[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n20[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n21[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n22[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n23[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n24[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n25[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n26[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n27[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n28[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n29[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_2 {
+label="candidate 1\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.5008939511077852\nmapping score:0.6114090948137062\ncost:11.9994\n-precision:0.92-recall:0.92"
+n31[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n32[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n33[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n34[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n35[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n36[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n37[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n38[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n39[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n40[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n41[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n42[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n43[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_3 {
+label="candidate 10\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.43930322892486484\nmapping score:0.590878854086066\ncost:10.99973\n-precision:0.55-recall:0.5"
+n45[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n46[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject2"];
+n47[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n48[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n49[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n50[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n51[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n52[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n53[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n54[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n55[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n56[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_4 {
+label="candidate 11\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.43930322892486484\nmapping score:0.590878854086066\ncost:10.99997\n-precision:0.45-recall:0.42"
+n58[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n59[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject2"];
+n60[style="filled",color="white",fillcolor="lightgray",label="Person2"];
+n61[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n62[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n63[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n64[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n65[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n66[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n67[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n68[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n69[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_5 {
+label="candidate 12\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.43075601695915283\nmapping score:0.6065483019493473\ncost:9.99976\n-precision:0.8-recall:0.67"
+n71[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n72[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n73[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n74[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n75[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n76[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n77[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n78[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n79[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n80[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n81[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_6 {
+label="candidate 13\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.43075601695915283\nmapping score:0.6065483019493473\ncost:10.99958\n-precision:0.82-recall:0.75"
+n83[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n84[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n85[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n86[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n87[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n88[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n89[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n90[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n91[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n92[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n93[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n94[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_7 {
+label="candidate 14\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.42402766388638446\nmapping score:0.6043055175917578\ncost:9.99976\n-precision:0.8-recall:0.67"
+n96[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n97[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n98[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n99[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n100[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n101[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n102[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n103[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n104[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n105[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n106[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_8 {
+label="candidate 15\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.42402766388638446\nmapping score:0.6043055175917578\ncost:10.99958\n-precision:0.82-recall:0.75"
+n108[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n109[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n110[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n111[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n112[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n113[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n114[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n115[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n116[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n117[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n118[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n119[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_9 {
+label="candidate 16\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.41709090300197665\nmapping score:0.6019932639636218\ncost:9.99976\n-precision:0.9-recall:0.75"
+n121[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n122[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n123[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n124[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n125[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n126[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n127[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n128[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n129[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n130[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n131[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_10 {
+label="candidate 17\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.41709090300197665\nmapping score:0.6019932639636218\ncost:10.99958\n-precision:0.91-recall:0.83"
+n133[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n134[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n135[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n136[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n137[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n138[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n139[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n140[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n141[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n142[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n143[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n144[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_11 {
+label="candidate 18\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.3931190017140106\nmapping score:0.5940026302009666\ncost:9.99976\n-precision:0.6-recall:0.5"
+n146[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n147[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n148[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n149[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n150[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n151[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n152[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n153[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n154[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n155[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n156[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_12 {
+label="candidate 19\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.3931190017140106\nmapping score:0.5940026302009666\ncost:10.99958\n-precision:0.64-recall:0.58"
+n158[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n159[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n160[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n161[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n162[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n163[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n164[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n165[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n166[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n167[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n168[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n169[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_13 {
+label="candidate 2\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.4941655980350168\nmapping score:0.6091663104561167\ncost:11.9994\n-precision:0.92-recall:0.92"
+n171[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n172[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n173[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n174[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n175[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n176[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n177[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n178[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n179[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n180[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n181[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n182[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n183[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_14 {
+label="candidate 3\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.48722883715060905\nmapping score:0.6068540568279808\ncost:11.9994\n-precision:1.0-recall:1.0"
+n185[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n186[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n187[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n188[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n189[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n190[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n191[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n192[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n193[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n194[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n195[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n196[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n197[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_15 {
+label="candidate 4\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.46325693586264305\nmapping score:0.5988634230653255\ncost:11.9994\n-precision:0.75-recall:0.75"
+n199[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n200[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n201[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n202[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n203[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n204[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n205[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n206[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n207[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n208[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n209[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n210[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n211[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_16 {
+label="candidate 5\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.4617411133264501\nmapping score:0.5983581488865944\ncost:11.9994\n-precision:0.83-recall:0.83"
+n213[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n214[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n215[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n216[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n217[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n218[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n219[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n220[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n221[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n222[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n223[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n224[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n225[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_17 {
+label="candidate 6\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.4614324042688474\nmapping score:0.5982552458673935\ncost:11.9994\n-precision:0.83-recall:0.83"
+n227[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n228[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n229[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n230[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n231[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n232[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n233[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n234[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n235[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n236[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n237[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n238[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n239[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_18 {
+label="candidate 7\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.45206011857782424\nmapping score:0.5951311506370526\ncost:11.9994\n-precision:0.92-recall:0.92"
+n241[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n242[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n243[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n244[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n245[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n246[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n247[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n248[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n249[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n250[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n251[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n252[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n253[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_19 {
+label="candidate 8\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.45206011857782424\nmapping score:0.5951311506370526\ncost:11.99957\n-precision:0.92-recall:0.92"
+n255[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n256[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n257[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n258[style="filled",color="white",fillcolor="lightgray",label="WebResource2"];
+n259[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n260[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n261[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n262[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n263[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n264[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n265[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n266[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n267[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+subgraph cluster_20 {
+label="candidate 9\nlink coherence:1.0\nnode coherence:1.0\nconfidence:0.44846967249910324\nmapping score:0.5939343352774789\ncost:11.9994\n-precision:0.83-recall:0.83"
+n269[style="filled",color="white",fillcolor="lightgray",label="CulturalHeritageObject1"];
+n270[style="filled",color="white",fillcolor="lightgray",label="Person1"];
+n271[style="filled",color="white",fillcolor="lightgray",label="EuropeanaAggregation1"];
+n272[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n273[shape="plaintext",style="filled",fillcolor="gold",label="nationality\n[Person,countryAssociatedWithThePerson,0.83]\n[Person,biographicalInformation,0.095]\n[CulturalHeritageObject,title,0.04]\n[CulturalHeritageObject,description,0.036]"];
+n274[shape="plaintext",style="filled",fillcolor="gold",label="img_url\n[WebResource,classLink,0.724]\n[Document,classLink,0.129]\n[CulturalHeritageObject,provenance,0.093]\n[Person,biographicalInformation,0.053]"];
+n275[shape="plaintext",style="filled",fillcolor="gold",label="date_made\n[Person,dateOfBirth,0.357]\n[Person,dateOfDeath,0.296]\n[CulturalHeritageObject,created,0.234]\n[Person,biographicalInformation,0.113]"];
+n276[shape="plaintext",style="filled",fillcolor="gold",label="artist_name\n[Person,nameOfThePerson,0.49]\n[Person,biographicalInformation,0.351]\n[CulturalHeritageObject,title,0.088]\n[CulturalHeritageObject,description,0.071]"];
+n277[shape="plaintext",style="filled",fillcolor="gold",label="title\n[CulturalHeritageObject,title,0.336]\n[CulturalHeritageObject,description,0.304]\n[Person,biographicalInformation,0.274]\n[Concept,prefLabel,0.087]"];
+n278[shape="plaintext",style="filled",fillcolor="gold",label="description\n[Person,biographicalInformation,0.44]\n[CulturalHeritageObject,description,0.358]\n[CulturalHeritageObject,title,0.161]\n[CulturalHeritageObject,provenance,0.042]"];
+n279[shape="plaintext",style="filled",fillcolor="gold",label="access_id\n[CulturalHeritageObject,extent,0.493]\n[CulturalHeritageObject,title,0.229]\n[CulturalHeritageObject,description,0.181]\n[CulturalHeritageObject,accessionNumber,0.096]"];
+n280[shape="plaintext",style="filled",fillcolor="gold",label="dimensions\n[CulturalHeritageObject,extent,0.611]\n[CulturalHeritageObject,description,0.167]\n[CulturalHeritageObject,title,0.115]\n[CulturalHeritageObject,medium,0.107]"];
+n281[shape="plaintext",style="filled",fillcolor="gold",label="technique\n[CulturalHeritageObject,medium,0.705]\n[CulturalHeritageObject,description,0.141]\n[Person,biographicalInformation,0.089]\n[CulturalHeritageObject,title,0.065]"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="created"]
+n2 -> n4[color="brown",fontcolor="black",label="creator"]
+n2 -> n5[color="brown",fontcolor="black",label="description"]
+n2 -> n6[color="brown",fontcolor="black",label="extent"]
+n2 -> n7[color="brown",fontcolor="black",label="medium"]
+n2 -> n8[color="brown",fontcolor="black",label="title"]
+n2 -> n9[color="brown",fontcolor="black",label="accessionNumber"]
+n4 -> n10[color="brown",fontcolor="black",label="countryAssociatedWithThePerson"]
+n4 -> n11[color="brown",fontcolor="black",label="nameOfThePerson"]
+n12 -> n2[color="brown",fontcolor="black",label="aggregatedCHO"]
+n12 -> n13[color="brown",fontcolor="black",label="hasView"]
+n13 -> n14[color="brown",fontcolor="black",label="classLink"]
+n16 -> n17[color="brown",fontcolor="black",label="isRelatedTo\nw=0.99997"]
+n16 -> n18[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n19 -> n16[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n19 -> n20[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n18 -> n21[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n16 -> n22[color="brown",fontcolor="black",label="title\nw=1.0"]
+n20 -> n23[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n16 -> n24[color="brown",fontcolor="black",label="created\nw=1.0"]
+n18 -> n25[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n17 -> n26[color="brown",fontcolor="black",label="title\nw=1.0"]
+n16 -> n27[color="brown",fontcolor="black",label="description\nw=1.0"]
+n16 -> n28[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n16 -> n29[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n31 -> n32[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n33 -> n31[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n33 -> n34[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n32 -> n35[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n31 -> n36[color="brown",fontcolor="black",label="title\nw=1.0"]
+n32 -> n37[color="brown",fontcolor="black",label="dateOfBirth\nw=1.0"]
+n34 -> n38[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n32 -> n39[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n31 -> n40[color="brown",fontcolor="black",label="description\nw=1.0"]
+n31 -> n41[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n31 -> n42[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n31 -> n43[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n45 -> n46[color="brown",fontcolor="black",label="isRelatedTo\nw=0.99997"]
+n45 -> n47[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n47 -> n48[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n45 -> n49[color="brown",fontcolor="black",label="title\nw=1.0"]
+n45 -> n50[color="brown",fontcolor="black",label="created\nw=1.0"]
+n46 -> n51[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n47 -> n52[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n46 -> n53[color="brown",fontcolor="black",label="title\nw=1.0"]
+n45 -> n54[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n45 -> n55[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n45 -> n56[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n58 -> n59[color="brown",fontcolor="black",label="isRelatedTo\nw=0.99997"]
+n59 -> n60[color="brown",fontcolor="black",label="creator\nw=1.0"]
+n58 -> n61[color="brown",fontcolor="black",label="title\nw=1.0"]
+n60 -> n62[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n58 -> n63[color="brown",fontcolor="black",label="created\nw=1.0"]
+n59 -> n64[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n59 -> n65[color="brown",fontcolor="black",label="title\nw=1.0"]
+n58 -> n66[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n58 -> n67[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n60 -> n68[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n58 -> n69[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n71 -> n72[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n72 -> n73[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n71 -> n74[color="brown",fontcolor="black",label="title\nw=1.0"]
+n72 -> n75[color="brown",fontcolor="black",label="dateOfBirth\nw=1.0"]
+n72 -> n76[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n71 -> n77[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n71 -> n78[color="brown",fontcolor="black",label="description\nw=1.0"]
+n71 -> n79[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n71 -> n80[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n71 -> n81[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n83 -> n84[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n85 -> n83[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n84 -> n86[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n83 -> n87[color="brown",fontcolor="black",label="title\nw=1.0"]
+n84 -> n88[color="brown",fontcolor="black",label="dateOfBirth\nw=1.0"]
+n84 -> n89[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n83 -> n90[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n83 -> n91[color="brown",fontcolor="black",label="description\nw=1.0"]
+n83 -> n92[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n83 -> n93[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n83 -> n94[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n96 -> n97[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n97 -> n98[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n96 -> n99[color="brown",fontcolor="black",label="title\nw=1.0"]
+n97 -> n100[color="brown",fontcolor="black",label="dateOfDeath\nw=1.0"]
+n97 -> n101[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n96 -> n102[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n96 -> n103[color="brown",fontcolor="black",label="description\nw=1.0"]
+n96 -> n104[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n96 -> n105[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n96 -> n106[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n108 -> n109[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n110 -> n108[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n109 -> n111[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n108 -> n112[color="brown",fontcolor="black",label="title\nw=1.0"]
+n109 -> n113[color="brown",fontcolor="black",label="dateOfDeath\nw=1.0"]
+n109 -> n114[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n108 -> n115[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n108 -> n116[color="brown",fontcolor="black",label="description\nw=1.0"]
+n108 -> n117[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n108 -> n118[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n108 -> n119[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n121 -> n122[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n122 -> n123[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n121 -> n124[color="brown",fontcolor="black",label="title\nw=1.0"]
+n121 -> n125[color="brown",fontcolor="black",label="created\nw=1.0"]
+n122 -> n126[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n121 -> n127[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n121 -> n128[color="brown",fontcolor="black",label="description\nw=1.0"]
+n121 -> n129[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n121 -> n130[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n121 -> n131[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n133 -> n134[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n135 -> n133[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n134 -> n136[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n133 -> n137[color="brown",fontcolor="black",label="title\nw=1.0"]
+n133 -> n138[color="brown",fontcolor="black",label="created\nw=1.0"]
+n134 -> n139[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n133 -> n140[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n133 -> n141[color="brown",fontcolor="black",label="description\nw=1.0"]
+n133 -> n142[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n133 -> n143[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n133 -> n144[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n146 -> n147[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n147 -> n148[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n146 -> n149[color="brown",fontcolor="black",label="title\nw=1.0"]
+n146 -> n150[color="brown",fontcolor="black",label="created\nw=1.0"]
+n147 -> n151[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n146 -> n152[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n146 -> n153[color="brown",fontcolor="black",label="description\nw=1.0"]
+n146 -> n154[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n146 -> n155[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n146 -> n156[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n158 -> n159[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n160 -> n158[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n159 -> n161[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n158 -> n162[color="brown",fontcolor="black",label="title\nw=1.0"]
+n158 -> n163[color="brown",fontcolor="black",label="created\nw=1.0"]
+n159 -> n164[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n158 -> n165[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n158 -> n166[color="brown",fontcolor="black",label="description\nw=1.0"]
+n158 -> n167[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n158 -> n168[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n158 -> n169[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n171 -> n172[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n173 -> n171[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n173 -> n174[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n172 -> n175[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n171 -> n176[color="brown",fontcolor="black",label="title\nw=1.0"]
+n172 -> n177[color="brown",fontcolor="black",label="dateOfDeath\nw=1.0"]
+n174 -> n178[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n172 -> n179[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n171 -> n180[color="brown",fontcolor="black",label="description\nw=1.0"]
+n171 -> n181[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n171 -> n182[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n171 -> n183[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n185 -> n186[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n187 -> n185[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n187 -> n188[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n186 -> n189[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n185 -> n190[color="brown",fontcolor="black",label="title\nw=1.0"]
+n188 -> n191[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n185 -> n192[color="brown",fontcolor="black",label="created\nw=1.0"]
+n186 -> n193[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n185 -> n194[color="brown",fontcolor="black",label="description\nw=1.0"]
+n185 -> n195[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n185 -> n196[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n185 -> n197[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n199 -> n200[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n201 -> n199[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n201 -> n202[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n200 -> n203[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n199 -> n204[color="brown",fontcolor="black",label="title\nw=1.0"]
+n202 -> n205[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n199 -> n206[color="brown",fontcolor="black",label="created\nw=1.0"]
+n200 -> n207[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n199 -> n208[color="brown",fontcolor="black",label="description\nw=1.0"]
+n199 -> n209[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n199 -> n210[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n199 -> n211[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n213 -> n214[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n215 -> n213[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n215 -> n216[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n214 -> n217[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n213 -> n218[color="brown",fontcolor="black",label="title\nw=1.0"]
+n216 -> n219[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n213 -> n220[color="brown",fontcolor="black",label="created\nw=1.0"]
+n214 -> n221[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n213 -> n222[color="brown",fontcolor="black",label="description\nw=1.0"]
+n213 -> n223[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n213 -> n224[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n213 -> n225[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n227 -> n228[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n229 -> n227[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n229 -> n230[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n228 -> n231[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n227 -> n232[color="brown",fontcolor="black",label="title\nw=1.0"]
+n230 -> n233[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n227 -> n234[color="brown",fontcolor="black",label="created\nw=1.0"]
+n228 -> n235[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n227 -> n236[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n227 -> n237[color="brown",fontcolor="black",label="description\nw=1.0"]
+n227 -> n238[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n227 -> n239[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n241 -> n242[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n243 -> n241[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n243 -> n244[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n242 -> n245[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n241 -> n246[color="brown",fontcolor="black",label="title\nw=1.0"]
+n244 -> n247[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n241 -> n248[color="brown",fontcolor="black",label="created\nw=1.0"]
+n242 -> n249[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n241 -> n250[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n241 -> n251[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n241 -> n252[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n241 -> n253[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n255 -> n256[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n257 -> n255[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n257 -> n258[color="brown",fontcolor="black",label="hasView\nw=0.99999"]
+n256 -> n259[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n255 -> n260[color="brown",fontcolor="black",label="title\nw=1.0"]
+n255 -> n261[color="brown",fontcolor="black",label="created\nw=1.0"]
+n256 -> n262[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n258 -> n263[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n255 -> n264[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n255 -> n265[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n255 -> n266[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n255 -> n267[color="brown",fontcolor="black",label="medium\nw=1.0"]
+n269 -> n270[color="brown",fontcolor="black",label="creator\nw=0.99976"]
+n271 -> n269[color="brown",fontcolor="black",label="aggregatedCHO\nw=0.99982"]
+n271 -> n272[color="brown",fontcolor="black",label="hasView\nw=0.99982"]
+n270 -> n273[color="brown",fontcolor="black",label="countryAssociatedWithThePerson\nw=1.0"]
+n272 -> n274[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n269 -> n275[color="brown",fontcolor="black",label="created\nw=1.0"]
+n270 -> n276[color="brown",fontcolor="black",label="nameOfThePerson\nw=1.0"]
+n269 -> n277[color="brown",fontcolor="black",label="description\nw=1.0"]
+n269 -> n278[color="brown",fontcolor="black",label="provenance\nw=1.0"]
+n269 -> n279[color="brown",fontcolor="black",label="accessionNumber\nw=1.0"]
+n269 -> n280[color="brown",fontcolor="black",label="extent\nw=1.0"]
+n269 -> n281[color="brown",fontcolor="black",label="medium\nw=1.0"]
+}
